@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Groupe ANJ provides professional accounting services including bookkeeping, tax compliance, financial reporting, and advisory support. Built on confidentiality and integrity.">
+    <title>Groupe ANJ | Services comptables, fiscaux et conseils</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600;1,700;1,900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Fixed Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <h2 style="color: #000; font-family: 'Forum', serif; font-size: 32px; margin: 0;">Groupe ANJ</h2>
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+            </div>
+            <div class="nav-cta">
+                <a href="#contact" class="btn-primary">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Professional Accounting Services Built on Confidentiality and Integrity</h1>
+                    <p>We provide bookkeeping, tax compliance, and financial reporting services to help businesses operate with clarity and confidence.</p>
+                    <div class="hero-actions">
+                        <a href="#services" class="btn-primary">Our Services</a>
+                        <a href="#contact" class="btn-secondary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slideshow">
+                <div class="slideshow-container">
+                    <div class="slide active">
+                        <img src="images/hero-1.jpg?t=1767570983169" alt="person holding Visa card">
+                    </div>
+                    <div class="slide">
+                        <img src="images/hero-2.jpg?t=1767570983169" alt="business people walking">
+                    </div>
+                    <div class="slide">
+                        <img src="images/hero-3.jpg?t=1767570983169" alt="professional with wallet">
+                    </div>
+                </div>
+                <div class="slideshow-dots">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-header-left">
+                    <div class="section-badge">
+                        <div class="plus-icon">
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <span>Our Services</span>
+                    </div>
+                    <h2>Comprehensive consulting for every financial need</h2>
+                </div>
+                <div class="section-header-right">
+                    <p>From financial organization to ongoing compliance and planning, we offer tailored accounting and advisory services designed to support your goals at every stage.</p>
+                </div>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="images/bookkeeping.jpg?t=1767570983169" alt="Tax forms and calculator">
+                    </div>
+                    <div class="service-details">
+                        <div class="service-text">
+                            <h3>Bookkeeping</h3>
+                            <p>Accurate, organized record-keeping that provides the foundation for sound financial decision-making and compliance.</p>
+                        </div>
+                        <a href="page1.html" class="btn-primary btn-sm">More Details</a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="images/financial-statements.jpg?t=1767570983169" alt="Financial statements">
+                    </div>
+                    <div class="service-details">
+                        <div class="service-text">
+                            <h3>Financial Statements Preparation</h3>
+                            <p>Clear, reliable financial reports that give you insight into your business's health and performance.</p>
+                        </div>
+                        <a href="#contact" class="btn-primary btn-sm">More Details</a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="images/tax-compliance.jpg?t=1767570983169" alt="Colleagues at conference table">
+                    </div>
+                    <div class="service-details">
+                        <div class="service-text">
+                            <h3>Tax Compliance & Filings</h3>
+                            <p>Expert guidance through tax regulations, ensuring timely and accurate filings that minimize risk.</p>
+                        </div>
+                        <a href="#contact" class="btn-primary btn-sm">More Details</a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="images/payroll-management.jpg?t=1767570983169" alt="Businessmen shaking hands">
+                    </div>
+                    <div class="service-details">
+                        <div class="service-text">
+                            <h3>Payroll Management</h3>
+                            <p>Reliable payroll processing that keeps your team paid accurately and on time, every time.</p>
+                        </div>
+                        <a href="#contact" class="btn-primary btn-sm">More Details</a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="images/financial-reports.jpg?t=1767570983169" alt="Hand holds seeds">
+                    </div>
+                    <div class="service-details">
+                        <div class="service-text">
+                            <h3>Financial Reports & Analysis</h3>
+                            <p>In-depth analysis and reporting that helps you understand trends, identify opportunities, and plan ahead.</p>
+                        </div>
+                        <a href="#contact" class="btn-primary btn-sm">More Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-header">
+                <div class="section-badge">
+                    <div class="plus-icon">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <span>About Us</span>
+                </div>
+                <h2>We provide practical accounting and advisory support, helping businesses and individuals navigate financial matters with clarity, accuracy, and confidence.</h2>
+            </div>
+
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/about-woman.jpg?t=1767570983169" alt="woman at desk working laptop">
+                </div>
+
+                <div class="about-text-section">
+                    <div class="about-text">
+                        <p>Built on strong accounting foundations, Groupe ANJ provides practical financial and advisory services focused on accuracy, clarity, and reliability. Our approach emphasizes structured financial information, thoughtful guidance, and support tailored to each client's needs.</p>
+                        <p>At our core, we value precision, transparency, and clear communication—ensuring every engagement is grounded in trust and professional integrity.</p>
+                    </div>
+
+                    <div class="values-list">
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M16.6668 5L7.50016 14.1667L3.3335 10" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="value-content">
+                                <h4>Service Excellence</h4>
+                                <p>Reliable, responsive accounting services delivered with care and attention to detail.</p>
+                            </div>
+                        </div>
+
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M16.6668 5L7.50016 14.1667L3.3335 10" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="value-content">
+                                <h4>Integrity</h4>
+                                <p>Transparent and ethical guidance at every step.</p>
+                            </div>
+                        </div>
+
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M16.6668 5L7.50016 14.1667L3.3335 10" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="value-content">
+                                <h4>Confidentiality</h4>
+                                <p>We safeguard client information with strict confidentiality and care.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="btn-secondary">More About Our Story</a>
+                </div>
+
+                <div class="about-image-right">
+                    <img src="images/about-man.jpg?t=1767570983169" alt="man wearing glasses working desk">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Section -->
+    <section class="value-section">
+        <div class="container">
+            <div class="value-grid">
+                <div class="value-card dark">
+                    <div class="value-card-content">
+                        <div class="section-badge">
+                            <div class="plus-icon">
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <span>Our Values</span>
+                        </div>
+                        <h2>Why clients choose us</h2>
+                        <p>We go beyond traditional consulting by combining financial expertise with strategic insight.</p>
+                    </div>
+                    <a href="#contact" class="btn-secondary">Contact Us</a>
+                </div>
+
+                <div class="value-card light">
+                    <div class="value-icon-large">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#0f3d3a" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <circle cx="12" cy="12" r="6"></circle>
+                            <circle cx="12" cy="12" r="2"></circle>
+                        </svg>
+                    </div>
+                    <h3>Tailored Strategies</h3>
+                    <p>Every client receives customized financial and business solutions aligned with their unique goals.</p>
+                </div>
+
+                <div class="value-card dark-large">
+                    <div class="value-text">
+                        <h2>Sustainable Growth</h2>
+                        <p>We focus not only on immediate results but also on long-term value and resilience.</p>
+                    </div>
+                    <div class="chart-container">
+                        <div class="chart-bar">
+                            <span class="chart-value">55%</span>
+                            <div class="bar" style="height: 55%; background: #fff;"></div>
+                            <span class="chart-label">2022</span>
+                        </div>
+                        <div class="chart-bar">
+                            <span class="chart-value">72%</span>
+                            <div class="bar" style="height: 72%; background: #fff;"></div>
+                            <span class="chart-label">2023</span>
+                        </div>
+                        <div class="chart-bar">
+                            <span class="chart-value">87%</span>
+                            <div class="bar" style="height: 87%; background: #c8f8a9;"></div>
+                            <span class="chart-label">2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="value-card image">
+                    <img src="images/value-woman-laptop.jpg?t=1767570983169" alt="woman in brown coat using macbook">
+                </div>
+
+                <div class="value-card dark-sm">
+                    <div class="value-icon-large">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+                            <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+                            <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+                            <path d="M4 22h16"></path>
+                            <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
+                            <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
+                            <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
+                        </svg>
+                    </div>
+                    <h3>Precision You Can Trust</h3>
+                    <p>Accurate, compliant, and well-structured accounting services delivered with care and attention to detail.</p>
+                </div>
+
+                <div class="value-card dark-sm">
+                    <div class="value-icon-large">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+                            <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+                        </svg>
+                    </div>
+                    <h3>Trusted Partnership</h3>
+                    <p>Our client-first approach is built on transparency, integrity, and lasting collaboration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <div class="faq-header">
+                <div class="section-badge">
+                    <div class="plus-icon">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <span>FAQ</span>
+                </div>
+                <h2>Frequently Asked Questions</h2>
+                <p>We've compiled answers to some of the most common questions about our consulting services, process, and partnerships.</p>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item active">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h4>What types of clients do you work with?</h4>
+                        <div class="faq-icon">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We partner with individuals, startups, and established organizations across various industries — from finance and technology to sustainability and healthcare. Our approach adapts to the scale and goals of each client.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h4>How do you structure your consulting engagements?</h4>
+                        <div class="faq-icon">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer flexible engagement models including project-based consulting, ongoing advisory retainers, and hourly consulting. Each engagement is tailored to your specific needs and timeline.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h4>Are your services customizable?</h4>
+                        <div class="faq-icon">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely. We believe every client's situation is unique, and we customize our services to match your specific requirements, industry, and business objectives.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h4>Do you offer confidential consulting?</h4>
+                        <div class="faq-icon">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes. Confidentiality is a cornerstone of our practice. We maintain strict privacy standards and can provide NDA agreements for sensitive engagements.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h4>How can I get started?</h4>
+                        <div class="faq-icon">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Simply reach out through our contact form or call us directly. We'll schedule an initial consultation to understand your needs and discuss how we can help.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <div class="section-badge">
+                    <div class="plus-icon">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <span>Get in Touch</span>
+                </div>
+                <h2>Partner with experts who understand your financial vision</h2>
+                <p>Let's discuss how our consulting solutions can help you plan smarter, grow stronger, and achieve lasting success.</p>
+            </div>
+            <div class="cta-actions">
+                <a href="#services" class="btn-primary">Our Services</a>
+                <a href="#contact" class="btn-secondary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-header">
+                <h2>Contact Us</h2>
+                <p>Ready to discuss your accounting needs? We're here to help.</p>
+            </div>
+            <div class="contact-container" data-vibe-form-placeholder="true">
+                <form class="contact-form">
+                    <input type="text" name="website" style="display: none;">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number (Optional)</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                    <p class="form-helper-text">We'll route messages to your inbox after you pick an email</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <h2 style="color: #fff; font-family: 'Forum', serif; font-size: 32px; margin: 0 0 20px 0;">Groupe ANJ</h2>
+                        <p>Empowering smarter financial decisions through strategy, insight, and innovation.</p>
+                    </div>
+
+                    <div class="footer-links">
+                        <div class="footer-column">
+                            <h4>About</h4>
+                            <ul>
+                                <li><a href="#about">About Us</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-column">
+                            <h4>Services</h4>
+                            <ul>
+                                <li><a href="#services">Bookkeeping</a></li>
+                                <li><a href="#services">Financial Statements Preparation</a></li>
+                                <li><a href="#services">Tax Compliance & Filings</a></li>
+                                <li><a href="#services">Payroll Management</a></li>
+                                <li><a href="#services">Financial Reports & Analysis</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-column">
+                            <h4>Contact</h4>
+                            <div class="footer-contact">
+                                <div class="contact-item">
+                                    <span>Phone</span>
+                                    <a href="tel:+15142317151">(514) 231-7151</a>
+                                </div>
+                                <div class="contact-item">
+                                    <span>Email Address</span>
+                                    <a href="mailto:info@groupeanj.ca">info@groupeanj.ca</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-divider"></div>
+
+                <div class="footer-bottom">
+                    <div class="footer-legal">
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                    <div class="footer-copyright">
+                        <p>&copy; <span class="copyright-year"></span> Groupe ANJ Inc. All Rights Reserved.</p>
+                        <p style="margin-top: 10px;">
+                            <a href="https://vibeotter.com" target="_blank" rel="noopener" style="opacity: 0.5; font-weight: 300; color: inherit; text-decoration: none;">
+                                Small business web design by Vibe Otter
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js?v=1767571218163"></script>
+</body>
+</html>
